@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../HardWare/STModBus/modbus/ascii -I ../HardWare/STModBus/modbus/include -I ../HardWare/STModBus/modbus/rtu -I ../HardWare/STModBus/modbus/tcp -I ../HardWare/STModBus/port
+-I.\RTE\_Modbus_demo
+-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+-ID:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx
+-o modbus_demo\demo.o --depend modbus_demo\demo.d "..\HardWare\STModBus\demo.c"
